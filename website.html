@@ -1,0 +1,303 @@
+
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الصفحة الرائعة التي ستنبهر منها!</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #00bcd4, #3f51b5);
+            color: #fff;
+            overflow-x: hidden;
+            height: 100vh;
+        }
+
+        .header {
+            text-align: center;
+            padding: 100px 20px;
+            position: relative;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .header h1 {
+            font-size: 4em;
+            animation: bounceIn 2s ease;
+        }
+
+        .intro {
+            padding: 50px 20px;
+            background: rgba(255, 255, 255, 0.1);
+            margin: 40px 0;
+            border-radius: 10px;
+            backdrop-filter: blur(5px);
+            text-align: center;
+            animation: fadeInUp 3s ease-in-out;
+        }
+
+        .intro h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #f1c40f;
+        }
+
+        .services {
+            display: flex;
+            justify-content: space-around;
+            padding: 60px 20px;
+            background: #34495e;
+            border-radius: 10px;
+            margin-bottom: 40px;
+            animation: slideUp 2s ease-in-out;
+        }
+
+        .service-item {
+            background: #2980b9;
+            padding: 30px;
+            width: 25%;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .service-item:hover {
+            transform: translateY(-10px);
+        }
+
+        .service-item h3 {
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            color: #fff;
+        }
+
+        .service-item p {
+            color: #ecf0f1;
+        }
+
+        .testimonials {
+            background: #2c3e50;
+            padding: 60px 20px;
+            margin-bottom: 40px;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        .testimonials h2 {
+            font-size: 2.5em;
+            color: #f1c40f;
+            margin-bottom: 40px;
+        }
+
+        .testimonial-item {
+            background: #34495e;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .testimonial-item:hover {
+            transform: scale(1.05);
+        }
+
+        .testimonial-item h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            color: #f39c12;
+        }
+
+        .testimonial-item p {
+            color: #ecf0f1;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 60px 20px;
+        }
+
+        .gallery img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+
+        .contact {
+            background: #2980b9;
+            padding: 50px 20px;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        .contact h2 {
+            font-size: 2.5em;
+            margin-bottom: 30px;
+        }
+
+        .contact form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .contact input, .contact textarea {
+            width: 60%;
+            padding: 12px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+
+        .contact button {
+            width: 60%;
+            padding: 15px;
+            border: none;
+            border-radius: 5px;
+            background-color: #f1c40f;
+            color: white;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact button:hover {
+            background-color: #e67e22;
+        }
+
+        footer {
+            background: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer p {
+            font-size: 1.2em;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes bounceIn {
+            0% {
+                transform: scale(0.3);
+                opacity: 0;
+            }
+            50% {
+                transform: scale(1.1);
+                opacity: 1;
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        @keyframes slideUp {
+            0% {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1>مرحبًا بك في أفضل صفحة ويب في العالم!</h1>
+</div>
+
+<div class="intro">
+    <h2>عن الصفحة</h2>
+    <p>نحن هنا لتقديم تجربة مستخدم استثنائية، حيث ندمج بين الإبداع، التصميم العصري، والتفاعل مع الجمهور. تم تصميم هذه الصفحة لتوفير كل ما تحتاجه في مكان واحد.</p>
+</div>
+
+<div class="services">
+    <div class="service-item">
+        <h3>دورات تعليمية مبتكرة</h3>
+        <p>تعلم المهارات الأكثر طلبًا في عالم التكنولوجيا، التصميم، واللغات عبر دروس تفاعلية ودورات متقدمة.</p>
+    </div>
+    <div class="service-item">
+        <h3>استشارات احترافية</h3>
+        <p>نحن نقدم استشارات في مجالات التسويق الرقمي، تطوير الأعمال، والتصميم الإبداعي، لمساعدتك في النمو والتطور.</p>
+    </div>
+    <div class="service-item">
+        <h3>تصميمات إبداعية</h3>
+        <p>خدمات تصميم مبتكرة تضمن لك التفرد والابتكار في تصميم الشعارات، المواقع، والحملات الإعلانية.</p>
+    </div>
+</div>
+
+<div class="testimonials">
+    <h2>آراء عملائنا</h2>
+    <div class="testimonial-item">
+        <h3>أحمد السالم</h3>
+        <p>"الدورات رائعة! تعلمت الكثير بسرعة. طريقة تقديم المعلومات فعالة وممتعة." </p>
+    </div>
+    <div class="testimonial-item">
+        <h3>سارة العنزي</h3>
+        <p>"الخدمة كانت مذهلة! الاستشارات ساعدتني في تحسين استراتيجياتي التسويقية بشكل كبير."</p>
+    </div>
+    <div class="testimonial-item">
+        <h3>يوسف آل خليفة</h3>
+        <p>"تصميم الشعار الجديد لعلامتي التجارية كان أكثر من رائع. فريق العمل محترف ومبدع!"</p>
+    </div>
+</div>
+
+<div class="gallery">
+    <img src="https://source.unsplash.com/500x300/?nature,water" alt="صورة طبيعية">
+    <img src="https://source.unsplash.com/500x300/?technology,computer" alt="صورة تكنولوجية">
+    <img src="https://source.unsplash.com/500x300/?art,painting" alt="صورة فنية">
+</div>
+
+<div class="contact">
+    <h2>تواصل معنا</h2>
+    <form>
+        <input type="text" placeholder="اسمك الكامل" required>
+        <input type="email" placeholder="البريد الإلكتروني" required>
+        <textarea placeholder="رسالتك هنا..." rows="5" required></textarea>
+        <button type="submit">إرسال</button>
+    </form>
+</div>
+
+<footer>
+    <p>&copy; 2025 أفضل صفحة ويب. جميع الحقوق محفوظة.</p>
+</footer>
+
+</body>
+</html>
